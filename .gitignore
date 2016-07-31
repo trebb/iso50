@@ -1,7 +1,10 @@
 *~
 *.pdf
 *.eep
+*.elf
 *.hex
 *.lss
 *.map
 *.sym
+.dep
+obj_*_lufa
