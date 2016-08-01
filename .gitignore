@@ -1,5 +1,7 @@
 *~
 *.pdf
+*.png
+*.stl
 *.eep
 *.elf
 *.hex
