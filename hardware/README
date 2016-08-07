@@ -1,0 +1,25 @@
+bottom-label-de.svg
+
+Legend image intended to be put onto the bottom of the keyboard.  'make
+bottom-label-de.pdf' should create a printable pdf that can be scaled
+to A4 size and printed on adhesive film.
+
+foot-template.dxf
+
+Template for cutting the bottom label, placing the adhesive feet, and
+cutting an insulating layer that goes on top of the bottom plate.
+
+frame.dxf
+
+Various shapes and parameters that are read by frame.scad.  Contains
+also a wiring schema.
+
+Frame.scad
+
+Renders the (non-essential) keyboard frame. 'make frame.stl' should
+create a 3D-printable .sti file.
+
+top-plate.dxf, bottom-plate.dxf
+
+Files for laser cutting the plates.  Top should be 1.5 mm, bottom
+1.0 mm.
