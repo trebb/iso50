@@ -19,6 +19,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include "stdint.h"
 #include "led.h"
 
+/*
+ * LED pin configuration
+ * LED: NumLock ScrollLock CapsLock
+ * pin: B4      D7         D4, (D6, on-board LED)
+ */
+
 void
 led_set(uint8_t usb_led)
 {

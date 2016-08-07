@@ -43,19 +43,20 @@ static void unselect_rows(void);
 static void select_row(uint8_t row);
 
 
-inline
-uint8_t matrix_rows(void)
+inline uint8_t
+matrix_rows(void)
 {
     return MATRIX_ROWS;
 }
 
-inline
-uint8_t matrix_cols(void)
+inline uint8_t
+matrix_cols(void)
 {
     return MATRIX_COLS;
 }
 
-void matrix_init(void)
+void
+matrix_init(void)
 {
     // initialize row and col
     unselect_rows();
@@ -68,7 +69,8 @@ void matrix_init(void)
     }
 }
 
-uint8_t matrix_scan(void)
+uint8_t
+matrix_scan(void)
 {
     for (uint8_t i = 0; i < MATRIX_ROWS; i++) {
         select_row(i);
@@ -97,25 +99,27 @@ uint8_t matrix_scan(void)
     return 1;
 }
 
-bool matrix_is_modified(void)
+bool
+matrix_is_modified(void)
 {
     if (debouncing) return false;
     return true;
 }
 
-inline
-bool matrix_is_on(uint8_t row, uint8_t col)
+inline bool
+matrix_is_on(uint8_t row, uint8_t col)
 {
     return (matrix[row] & ((matrix_row_t)1<<col));
 }
 
-inline
-matrix_row_t matrix_get_row(uint8_t row)
+inline matrix_row_t
+matrix_get_row(uint8_t row)
 {
     return matrix[row];
 }
 
-void matrix_print(void)
+void
+matrix_print(void)
 {
     print("\nr/c 0123456789ABCDEF\n");
     for (uint8_t row = 0; row < MATRIX_ROWS; row++) {
@@ -125,7 +129,8 @@ void matrix_print(void)
     }
 }
 
-uint8_t matrix_key_count(void)
+uint8_t
+matrix_key_count(void)
 {
     uint8_t count = 0;
     for (uint8_t i = 0; i < MATRIX_ROWS; i++) {

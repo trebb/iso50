@@ -41,7 +41,8 @@ const uint16_t PROGMEM fn_actions[] = {
 };
 
 /*
- * Macro definition
+ * Macro definition: Alt Gr is both a layer-switching fn key and a key
+ * sent to the host
  */
 const macro_t *
 action_get_macro(keyrecord_t *record, uint8_t id, uint8_t opt)
