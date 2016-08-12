@@ -22,7 +22,7 @@ difference() {
   union() {
     difference() {
       hull() {
-        color("green", $fs = 1, $fa = 3) {
+        color("green", $fs = 0.2, $fa = 2) {
           rotate_extrude() {
             import (file = "frame.dxf", layer = "outline-profile");
           }
@@ -62,7 +62,7 @@ difference() {
       }
     }
   }
-  color("cyan") {
+  color("cyan", $fs = 0.2, $fa = 2) {
     translate([x0_cable, y0_cable, 0]) {
       rotate([-90, 0, 0]) {
         rotate_extrude() {
