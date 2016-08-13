@@ -22,13 +22,13 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         TRNS,  NO,  NO,  NO,  NO,  NO,BTN3,BTN2,BTN1,BTN4,BTN5,  NO,TRNS,  NO,
         TRNS,TRNS,TRNS,  NO,  NO,               TRNS,BTN1,TRNS,TRNS,TRNS,TRNS),
     [4] = KEYMAP(               /* Alt Gr */
-        TRNS,TRNS,TRNS,TRNS,TRNS,   6,   7,   8,   9,   0,MINS, EQL, GRV,
+        TRNS,TRNS,TRNS,TRNS,TRNS,   6,   7,   8,   9,   0,MINS, EQL,TRNS,
         TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,
         TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,
         TRNS,TRNS,TRNS,  NO,  NO,                 NO,TRNS,TRNS,TRNS,TRNS,TRNS),
 };
 
-enum macro_id {
+enum function_id {
     ALTGR,
 };
 
@@ -36,23 +36,20 @@ const uint16_t PROGMEM fn_actions[] = {
     [0] = ACTION_LAYER_MOMENTARY(1), /* Num */
     [1] = ACTION_LAYER_MOMENTARY(2), /* Nav */
     [2] = ACTION_LAYER_MOMENTARY(3), /* Rat */
-    [3] = ACTION_MACRO(ALTGR),       /* Alt Gr; invoking macro */
-    [4] = ACTION_LAYER_MOMENTARY(4), /* Alt Gr; used in macro */
+    [3] = ACTION_FUNCTION(ALTGR),    /* Alt Gr */
 };
 
-/*
- * Macro definition: Alt Gr is both a layer-switching fn key and a key
- * sent to the host
- */
-const macro_t *
-action_get_macro(keyrecord_t *record, uint8_t id, uint8_t opt)
+void action_function(keyrecord_t *record, uint8_t id, uint8_t opt)
 {
     switch (id) {
     case ALTGR:
-        return (record->event.pressed ?
-                MACRO(D(RALT), D(FN4), END) :
-                MACRO(U(RALT), U(FN4), END));
+        if (record->event.pressed) {
+            add_mods(MOD_BIT(KC_RALT));
+            layer_on(4);
+        } else {
+            del_mods(MOD_BIT(KC_RALT));
+            layer_off(4);
+        }
         break;
     }
-    return MACRO_NONE;
 }
