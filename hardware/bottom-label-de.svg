@@ -186,19 +186,19 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.518627"
-     inkscape:cx="613.03185"
+     inkscape:zoom="1.5163226"
+     inkscape:cx="583.42309"
      inkscape:cy="166.83202"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="layer10"
      inkscape:grid-points="true"
      showgrid="false"
      gridtolerance="10000"
      showborder="false"
-     inkscape:window-width="1920"
-     inkscape:window-height="1920"
+     inkscape:window-width="1918"
+     inkscape:window-height="1902"
      inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-y="16"
      showguides="true"
      inkscape:guide-bbox="true"
      inkscape:grid-bbox="true"
@@ -3226,20 +3226,19 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ffcc00;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="249.37914"
-       y="147.89592"
+       x="250.0878"
+       y="146.479"
        id="text5314"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan5318"
-         x="249.37914"
-         y="147.89592">🔧</tspan></text>
-    <circle
+         x="250.0878"
+         y="146.479">🔧</tspan></text>
+    <path
        style="fill:#ffcc00;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 238.10327,125.11523 a 3.934118,3.934118 0 0 0 -3.93555,3.9336 3.934118,3.934118 0 0 0 3.93555,3.93359 3.934118,3.934118 0 0 0 3.93359,-3.93359 3.934118,3.934118 0 0 0 -3.93359,-3.9336 z"
        id="path5320"
-       cx="224.81224"
-       cy="129.04865"
-       r="3.934118" />
+       inkscape:connector-curvature="0" />
     <rect
        style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect5399"
