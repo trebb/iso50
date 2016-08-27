@@ -186,11 +186,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.5163226"
-     inkscape:cx="583.42309"
+     inkscape:zoom="1.0705725"
+     inkscape:cx="613.69034"
      inkscape:cy="166.83202"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer10"
+     inkscape:current-layer="layer5"
      inkscape:grid-points="true"
      showgrid="false"
      gridtolerance="10000"
@@ -2245,6 +2245,17 @@
          id="tspan5354"
          x="240.00011"
          y="169.43585">⏏</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#aa0088;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="450.23743"
+       y="110.86694"
+       id="text7218"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan7222"
+         x="450.23743"
+         y="110.86694">⇤</tspan></text>
   </g>
   <g
      inkscape:groupmode="layer"
