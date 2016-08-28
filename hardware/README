@@ -1,25 +1,56 @@
-bottom-label-de.svg
+To build the keyboard, two laser-cut plates, a 3D-printed frame, and a
+sticker that covers the screw heads on the bottom need to be made. 
 
-Legend image intended to be put onto the bottom of the keyboard.  'make
-bottom-label-de.pdf' should create a printable pdf that can be scaled
-to A4 size and printed on adhesive film.
+The .dxf files have been created using LibreCAD 2.08.
 
-foot-template.dxf
 
-Template for cutting the bottom label, placing the adhesive feet, and
-cutting an insulating layer that goes on top of the bottom plate.
+- top-plate.dxf, bottom-plate.dxf
 
-frame.dxf
+Files for laser cutting the plates.  Top should be 1.5 mm, bottom
+1.0 mm.
+
+
+- frame.dxf
 
 Various shapes and parameters that are read by frame.scad.  Contains
 also a wiring schema.
 
-Frame.scad
 
-Renders the (non-essential) keyboard frame. 'make frame.stl' should
-create a 3D-printable .sti file.
+- frame.scad
 
-top-plate.dxf, bottom-plate.dxf
+Renders the (merely decorative) keyboard frame. 'make frame.stl' should
+create a 3D-printable .stl file.  OpenSCAD 2015.03 should work.
 
-Files for laser cutting the plates.  Top should be 1.5 mm, bottom
-1.0 mm.
+
+- bottom-label-de.svg
+
+Legend image intended to be put onto the bottom of the keyboard.  'make
+bottom-label-de.pdf' should create a printable pdf that can be scaled
+to A4 size and printed on adhesive film.  Created using inkscape 0.9.1.
+
+
+- foot-template.dxf
+
+Template for cutting the bottom label, placing the adhesive feet, and
+cutting an insulating layer that goes on top of the bottom plate.
+
+
+Other parts needed:
+
+- 52 Cherry-style switches
+
+- 1 2u Costar stabilizer set
+
+- Mini USB cable
+
+- Teensy 2.0
+
+- An ISO keycap set that contains 6 1.25u bottom row keys (most sets
+  contain 7) and 7 1.5u bottom row keys (only a few keysets on the
+  market contain that much)
+
+- 52 diodes
+
+- 3 LEDs, 3 resistors 330 Ohm
+
+- 12 distance bolts M2 x 6.3 mm
