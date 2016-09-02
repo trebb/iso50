@@ -5,3 +5,5 @@ The hardware part is covered in directory ./hardware.
 Firmware is based on TMK (https://github.com/tmk/tmk_keyboard); see
 directory ./firmware. 'make program' should create the hex file
 containing the firmware.
+
+http://imgur.com/a/XgsYZ

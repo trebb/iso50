@@ -46,8 +46,8 @@ Other parts needed:
 - Teensy 2.0
 
 - An ISO keycap set that contains 6 1.25u bottom row keys (most sets
-  contain 7) and 7 1.5u bottom row keys (only a few keysets on the
-  market contain that much)
+  contain 7), 7 1.5u bottom row keys (only a few keysets on the market
+  contain that much), and an asymmetrical, stepped CapsLock key
 
 - 52 diodes
 
