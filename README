@@ -7,3 +7,9 @@ directory ./firmware. 'make program' should create the hex file
 containing the firmware.
 
 http://imgur.com/a/XgsYZ
+
+
+The name of this project refers to the standard 105-key ISO keyboard
+layout, reduced to 50 %.  It is not related to anything using the
+photography-related connotation of the name.  It is not affiliated
+with http://blog.iso50.com/.
