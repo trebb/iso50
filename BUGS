@@ -1,13 +1,4 @@
 BUGS
 
-- The stabilizer holes seem to be too large.
-
-- Plate corners and screw holes should be drawn with decent arcs.
-
 - The bottom label should be scaled to the correct size; however,
   Incscape crashes when trying to do this.
-
-- The reset hole is somewhat misplaced and should move left by about
-  1.5 mm.
-
-- There is a screw head that collides with the stabilizer.
