@@ -1,5 +1,6 @@
 *~
 \#*
+*bak
 *.pdf
 *.png
 *.stl
@@ -9,5 +10,7 @@
 *.lss
 *.map
 *.sym
+*.net
 .dep
 obj_*_lufa
+plot_files/
