@@ -1,5 +1,5 @@
 The PCB version of the ISO50 has its diodes oriented in a way that is
-unusual for projects using TMK (kathodes connected to columns instead
+unusual for projects using TMK (cathodes connected to columns instead
 of rows); see file matrix.c.
 
 
