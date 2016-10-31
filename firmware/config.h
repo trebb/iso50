@@ -20,12 +20,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
 /* USB Device descriptor parameter */
-#define VENDOR_ID 0xFEED
+#define VENDOR_ID 0x1209
 #define PRODUCT_ID 0x5050
+/* (Thanks to http://pid.codes) */
 #define DEVICE_VER 0x0001
 #define MANUFACTURER trebb
 #define PRODUCT ISO50
-#define DESCRIPTION t.m.k. keyboard firmware for ISO50
+#define DESCRIPTION TMK keyboard firmware for ISO50
 
 /* key matrix size */
 #define MATRIX_ROWS 4
