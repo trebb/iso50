@@ -1,0 +1,29 @@
+The PCB version of the ISO50 has its diodes oriented in a way that is
+unusual for projects using TMK (kathodes connected to columns instead
+of rows); see file matrix.c.
+
+
+Suggested soldering points for connecting a USBasp programmer to an
+assembled board:
+
+-----------------------------------------
+Pin    m32U4            USBasp  Soldering
+name   pin              pin     point
+-----  ---------------  ------  ---------
+RESET  13               5       SW1
+GND    5,15,23,43,35    8,10    SW1
+VCC    2,7,14,24,34,44  2       R4
+MOSI   10               1       column 7
+MISO   11               9       R10
+SCLK   9                7       column 6
+-----------------------------------------
+
+
+Installing a bootloader:
+
+$ avrdude -c usbasp -pm32u4 -U flash:w:ATMega32U4-usbdevice_dfu-1_0_0.hex
+
+
+Setting fuses:
+
+$ avrdude -c usbasp -pm32u4 -U lfuse:w:0xff:m -U hfuse:w:0xd9:m -U efuse:w:0xf3:m 
