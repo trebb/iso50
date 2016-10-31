@@ -2,3 +2,6 @@ BUGS
 
 - The bottom label should be scaled to the correct size; however,
   Incscape crashes when trying to do this.
+
+- The stabilizer holes in the PCB version of the top plate are too
+  short by about 0.5 mm.

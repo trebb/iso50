@@ -1,12 +1,18 @@
 ISO50 -- a 50% DIY computer keyboard
 
+
+There are two variant of the ISO50 keyboard: hand-wired and
+PCB-based.  Files and directories that have "pcb" in their name are
+part of the PCB-baseed variant.
+
 The hardware part is covered in directory ./hardware.
 
 Firmware is based on TMK (https://github.com/tmk/tmk_keyboard); see
-directory ./firmware. 'make program' should create the hex file
-containing the firmware.
+directories ./firmware or ./firmware-pcb, respectively.
+
 
 http://imgur.com/a/XgsYZ
+http://imgur.com/a/m9RCg
 
 
 The name of this project refers to the standard 105-key ISO keyboard

@@ -3,6 +3,16 @@ unusual for projects using TMK (kathodes connected to columns instead
 of rows); see file matrix.c.
 
 
+Building firmware .hex file:
+
+$ make program
+
+
+Upload firmware to keyboard (press reset button first):
+
+$ make dfu
+
+
 Suggested soldering points for connecting a USBasp programmer to an
 assembled board:
 

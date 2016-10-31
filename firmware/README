@@ -1,0 +1,8 @@
+Building firmware .hex file:
+
+$ make program
+
+
+Upload firmware to keyboard (press reset button):
+
+$ make teensy
