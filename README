@@ -1,7 +1,7 @@
 ISO50 -- a 50% DIY computer keyboard
 
 
-There are two variant of the ISO50 keyboard: hand-wired and
+There are two variants of the ISO50 keyboard: hand-wired and
 PCB-based.  Files and directories that have "pcb" in their name are
 part of the PCB-baseed variant.
 

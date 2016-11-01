@@ -1,32 +1,41 @@
-To build the keyboard, two laser-cut plates, a 3D-printed frame, and a
-sticker that covers the screw heads on the bottom need to be made. 
+To build the keyboard, two laser-cut plates, an optional PCB, a
+3D-printed frame, and a sticker that covers the screw heads and holes
+on the bottom need to be made.
 
-The .dxf files have been created using LibreCAD 2.08.
+
+Files in this directory
 
 
-- top-plate.dxf, bottom-plate.dxf
+- top-plate.dxf, bottom-plate.dxf, top-plate-pcb.dxf,
+  bottom-plate-pcb.dxf
 
 Files for laser cutting the plates.  Top should be 1.5 mm, bottom
-1.0 mm.
+1.0 mm (hand-wired) or 1.5 mm (PCB).
 
 
-- frame.dxf
+- top-plate-pcb-pcb.dxf
 
-Various shapes and parameters that are read by frame.scad.  Contains
-also a wiring schema.
+Helper file used for the KiCad project in ./pcb-top-plate/.
+
+- frame.dxf, frame-pcb.dxf
+
+Various shapes and parameters that are read by frame.scad or
+frame-pcb.scad, respectively.  frame.dxf also contains a wiring
+schema.
 
 
-- frame.scad
+- frame.scad, frame-pcb.scad
 
-Renders the (merely decorative) keyboard frame. 'make frame.stl' should
-create a 3D-printable .stl file.  OpenSCAD 2015.03 should work.
+Renders the (merely decorative) keyboard frame. 'make frame.stl' or
+'make frame-pcb.stl' should create a 3D-printable .stl file.
 
 
-- bottom-label-de.svg
+- bottom-label-de.svg, bottom-label-pcb-de.svg
 
 Legend image intended to be put onto the bottom of the keyboard.  'make
-bottom-label-de.pdf' should create a printable pdf that can be scaled
-to A4 size and printed on adhesive film.  Created using inkscape 0.9.1.
+bottom-label-de.pdf' or 'make bottom-label-pcb-de.pdf' should create a
+printable pdf that can be scaled to A4 size and printed on adhesive
+film.
 
 
 - foot-template.dxf
@@ -35,22 +44,53 @@ Template for cutting the bottom label, placing the adhesive feet, and
 cutting an insulating layer that goes on top of the bottom plate.
 
 
-Other parts needed:
+- pcb-main/
+
+KiCad project of the PCB.
+
+
+- ./pcb-top-plate/, ./pcb-bottom-plate/
+
+KiCad projects containing PCB-shaped alternatives to top-plate-pcb.dxf
+and bottom-plate-dxf.
+
+
+
+Software used
+
+LibreCAD 2.08 (.dxf)
+OpenSCAD 2015.03 (.stl)
+Inkscape 0.9.1 (.svg)
+KiCad r6904
+                   
+
+
+Other parts:
 
 - 52 Cherry-style switches
 
 - 1 2u Costar stabilizer set
 
-- Mini USB cable
+- USB cable: Mini for the hand-wiring, Micro for the PCB.
 
-- Teensy 2.0
+- An ISO keycap set that contains
 
-- An ISO keycap set that contains 6 1.25u bottom row keys (most sets
-  contain 7), 7 1.5u bottom row keys (only a few keysets on the market
-  contain that much), and an asymmetrical, stepped CapsLock key
+  - 6 1.25u bottom row keys (most sets contain 7),
 
-- 52 diodes
+  - 7 1.5u bottom row keys (only a few keysets on the market contain
+    that much), and
 
-- 3 LEDs, 3 resistors 330 Ohm
+  - an asymmetrical, stepped CapsLock key
 
-- 12 distance bolts M2 x 6.3 mm
+- 12 standoffs M2 x 6.3 mm (hand-wired) or M2 x 4.5 mm (PCB)
+
+- 52 diodes 1N4148
+
+- For the hand wiring:
+
+  - Teensy 2.0
+
+  - 3 LEDs, 3 resistors 330 Ohm
+
+- For components of the PCB variant, consult the KiCad project in
+  directory ./pcb-main.
