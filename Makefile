@@ -9,6 +9,7 @@ gh-pages:
 	cp hardware/frame.stl gh-pages/
 	cp hardware/frame-pcb.stl gh-pages/
 	cp hardware/top-plate.dxf gh-pages/
+	cp hardware/top-plate-pcb.dxf gh-pages/
 	cp hardware/pcb-top-plate/plot_files/pcb-top-plate.zip gh-pages/
 	-cp hardware/pcb-top-plate/plot_files/pcb-top-plate.pdf gh-pages/
 	-cp hardware/pcb-top-plate/plot_files/pcb-top-plate-brd.svg gh-pages/
